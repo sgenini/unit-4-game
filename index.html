@@ -1,0 +1,115 @@
+<!-- Bootstrap-Powered HTML -->
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>
+    Crazy Crystal Collectors
+  </title>
+
+  <!-- We link our html to the Bootstrap CDN -->
+  <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Gloria+Hallelujah|Kaushan+Script|Pacifico|Playfair+Display+SC:400,400i,700,700i,900,900i|Shadows+Into+Light" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Container Div -->
+  <div class="container">
+    <div class="jumbotron pt-5">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center">Crazy Crystal Collectors</h1>
+          <h3 class="text-center"><small class="text-muted">A Mathematical Matching Game</small></h3>
+            <div id="top-buttons">
+              <button type="button" class="btn btn-dark mt-2" id="instructions-button" data-toggle="modal" data-target="#instructionsModal">How to Play</button>
+              <!-- Modal -->
+                <div class="modal fade" id="instructionsModal" tabindex="-1" role="dialog" aria-labelledby="instructionsModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h3 class="modal-title" id="instructionsModalLabel">Instructions</h3>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body text-left">
+                            <ul>
+                              <li>You will be assigned a Goal Number at the start of the game.</li>
+                              <li>Click on the Crystals below to add its specific amount of points to your Current Number.</li> 
+                              <li>You win the game by matching your Current Number to the Goal Number chosen.</li>
+                              <li>You lose the game if your Current Number surpasses the Goal Number.</li>
+                              <li>PS- The values of the crystals are hidden. (Use arithmetic to figure out each crystal's value!)</li>
+                              <li>Each new round, the game will randomize the Goal Number and the values of the Crystals.</li>
+                              <li>Good luck, and have fun!</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              <!-- <button class="btn btn-dark mt-2" id="instructions-button">How to Play</button> -->
+              <button class="btn btn-dark mt-2" id="start-button">Start Game</button>
+              <br>
+              <!-- <button class="btn btn-primary mt-2" id="next-round">Next Round</button> -->
+            </div>
+            <div class="row mx-auto" id="number-counters" style="width:70%">
+              <div class="col-6">
+                <h3 class="text-center mt-4">Goal Number:</h3>
+                <h3 class="text-center" id="goal-number">0</h3>
+              </div>
+              <div class="col-6">
+                <h4 class="text-muted text-center mt-4">Current Number:</h4>
+                <h4 class="text-center" id="current-number">0</h4>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="row mt-4 mx-auto" style="width: 600px;">
+        <div class="col-3">
+          <img class="crystal" id="crystal-1" src="assets/images/Crystal-Red.png">
+        </div>
+        <div class="col-3">
+          <img class="crystal" id="crystal-2" src="assets/images/Crystal-Gold.png">
+        </div>
+        <div class="col-3">
+          <img class="crystal" id="crystal-3" src="assets/images/Crystal-Green.png">
+        </div>
+        <div class="col-3">
+          <img class="crystal" id="crystal-4" src="assets/images/Crystal-Blue.png">
+        </div>
+      </div>
+      <div class="row mt-4 mx-auto" style="width: 500px;">
+        <div class="col-6">
+          <!-- <div class="card"> -->
+            <h4 class="card-title mt-2">Wins:</h4>
+            <p id="win-count">0</p>
+          <!-- </div> -->
+        </div>
+        <div class="col-6">
+          <!-- <div class="card"> -->
+            <h4 class="card-title mt-2">Losses:</h4>
+            <p id="loss-count">0</p>
+          <!-- </div> -->
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="assets/javascript/game.js"></script>
+
+</html>

@@ -1,0 +1,134 @@
+html { 
+    background: url(../images/photo-1489552615259-23c7732e3472.jpg) no-repeat center center fixed; 
+    background-size: cover;
+  }
+
+
+/* font-family: 'Pacifico', cursive;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Playfair Display SC', serif; */
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: transparent;
+  }
+  
+h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 4em;
+}
+
+h3,
+h4 {
+    font-family: 'Playfair Display SC', serif;
+}
+
+h5 {
+    font-family: 'Shadows Into Light', cursive;
+    margin-top: 10px;
+}
+
+.btn {
+    font-family: 'Kaushan Script', cursive;
+    /* font-weight: 200px; */
+}
+
+li {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+div {
+    text-align: center;
+    width: auto;
+}
+
+p {
+    display: inline;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+}
+
+img {
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.container {
+    display: block;
+    overflow: auto;
+    background: transparent;
+}
+
+.jumbotron {
+    background-color: #FEFEFE;
+    margin-top: 7.5%;
+    border: 5px solid darkslategray;
+}
+
+.col-4 {
+    text-align: center;
+}
+
+#goal-number {
+    color: darkslateblue;
+    font-size: 50px;
+}
+
+#current-number {
+    color: darkslategray;
+    font-size: 50px;
+}
+
+.crystal {
+    padding: 10px;
+    height: 120px;
+}
+
+.crystal:hover {
+    /* border: 5px solid lightskyblue; */
+    background-color: #eeeeee;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+#next-round {
+    display:none;
+}
+
+#crystal-1 {
+    transform: rotate(20deg)
+}
+#crystal-1:active {
+    background-color: #ffd2d1;
+}
+
+#crystal-2 {
+    transform: rotate(0deg)
+}
+#crystal-2:active {
+    background-color: rgb(247, 255, 177);
+}
+
+#crystal-3 {
+    transform: rotate(-5deg)
+}
+#crystal-3:active {
+    background-color: #b7ffb6;
+}
+
+#crystal-4 {
+    transform: rotate(10deg)
+}
+#crystal-4:active {
+    background-color: rgb(196, 243, 255);
+}
+.card {
+    border: 3px solid darkslategray;
+}
