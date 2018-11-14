@@ -25,7 +25,7 @@ $(document).ready(function(){
     // Start Button
     $('#start-button').on('click', function(){
         $('#start-button').hide("slow");
-        $('#current-number').text(currentNumber);
+        $('#current-number').text(0);
         runGame();
     });
 
